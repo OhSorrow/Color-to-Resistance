@@ -44,7 +44,7 @@ const realTime = (value1, value2, value3, value4, value5) => {
 
 // Change the color of the band images based on the selected option
 // band 1
-selectBand1.addEventListener("click", function (e) {
+selectBand1.addEventListener("change", function (e) {
   const selectoption = e.target.options.selectedIndex;
   pic_band1.style.backgroundColor = bandColor[selectoption];
   // calc real
@@ -55,7 +55,7 @@ selectBand1.addEventListener("click", function (e) {
   realTime(selectoption, value2, value3, value4, value5);
 });
 // band 2
-selectBand2.addEventListener("click", function (e) {
+selectBand2.addEventListener("change", function (e) {
   const selectoption = e.target.options.selectedIndex;
   pic_band2.style.backgroundColor = bandColor[selectoption];
   // calc real
@@ -66,7 +66,7 @@ selectBand2.addEventListener("click", function (e) {
   realTime(value1, selectoption, value3, value4, value5);
 });
 // band 3
-selectBand3.addEventListener("click", function (e) {
+selectBand3.addEventListener("change", function (e) {
   const selectoption = e.target.options.selectedIndex;
   pic_band3.style.backgroundColor = bandColor[selectoption];
 
@@ -84,7 +84,7 @@ selectBand3.addEventListener("click", function (e) {
   realTime(value1, value2, selectoption, value4, value5);
 });
 // band 4
-selectBand4.addEventListener("click", function (e) {
+selectBand4.addEventListener("change", function (e) {
   const selectoption = e.target.options.selectedIndex;
   pic_band4.style.backgroundColor = bandColor[selectoption];
   const value1 = selectBand1.options.selectedIndex;
@@ -94,7 +94,7 @@ selectBand4.addEventListener("click", function (e) {
   realTime(value1, value2, value3, selectoption, value5);
 });
 // band 5
-selectBand5.addEventListener("click", function (e) {
+selectBand5.addEventListener("change", function (e) {
   const selectoption = e.target.options.selectedIndex;
   pic_band5.style.backgroundColor = bandTlorans[selectoption];
   const value1 = selectBand1.options.selectedIndex;
