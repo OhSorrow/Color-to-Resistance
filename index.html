@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Resistor Color Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <header>
+    <h1>Resistor Color Calculator</h1>
+  </header>
+  <body>
+    <table> 
+      <tr align="center">
+        <td>Band 1</td>
+        <td>Band 2</td>
+        <td>Band 3</td>
+        <td>Band 4</td>
+        <td>Band 5</td>
+      </tr>
+      <tr align="center">
+        <td>Value 1</td>
+        <td>Value 2</td>
+        <td>Value 3</td>
+        <td>Value 4</td>
+        <td>Tolerance</td>
+      </tr>
+      <tr class="bands">
+        <form name="color" action="">
+          <td class="band1">
+            <select style="width: 150px; color: black; background:white;">
+            <option value="0"">Black (0)</option>
+            <option value="1" selected>Brown (1)</option>
+            <option value="2"">Red (2)</option>
+            <option value="3"">Orange (3)</option>
+            <option value="4"">Yellow (4)</option>
+            <option value="5"">Green (5)</option>
+            <option value="6"">Blue (6)</option>
+            <option value="7"">Violet (7)</option>
+            <option value="8"">Gray (8)</option>
+            <option value="9"">White (9)</option>
+          </select></td>
+          <td class="band2">
+            <select name="band2" style="width: 150px; color: black; background:white;">
+            <option value="0" selected>Black (0)</option>
+            <option value="1">Brown (1)</option>
+            <option value="2">Red (2)</option>
+            <option value="3">Orange (3)</option>
+            <option value="4">Yellow (4)</option>
+            <option value="5">Green (5)</option>
+            <option value="6">Blue (6)</option>
+            <option value="7">Violet (7)</option>
+            <option value="8">Gray (8)</option>
+            <option value="9">White (9)</option>
+          </select></td>
+          <td class="band3">
+            <select name="band3" style="width: 150px;">
+            <option value="0"">Black (0)</option>
+            <option value="1">Brown (1)</option>
+            <option value="2"">Red (2)</option>
+            <option value="3"">Orange (3)</option>
+            <option value="4"">Yellow (4)</option>
+            <option value="5"">Green (5)</option>
+            <option value="6"">Blue (6)</option>
+            <option value="7"">Violet (7)</option>
+            <option value="8"">Gray (8)</option>
+            <option value="9"">White (9)</option>
+            <option value="none" selected>None</option>
+          </select></td>
+          <td class="band4">
+            <select style="width: 150px; color: black; background:white;">
+            <option value="0" selected>Black (1)</option>
+            <option value="1">Brown (10)</option>
+            <option value="2" selected>Red (100)</option>
+            <option value="3">Orange (1K)</option>
+            <option value="4">Yellow (10K)</option>
+            <option value="5">Green (100K)</option>
+            <option value="6">Blue (1M)</option>
+            <option value="7">Violet (10M)</option>
+            <option value="8">Gray (100M)</option>
+            <option value="9">White (1G)</option>
+            </select></td>
+          <td class="band5">
+            <select name="band5" style="width: 150px;">
+            <option value="10">Brown (&plusmn; 1%)</option>
+            <option value="11">Red (&plusmn; 2%)</option>
+          <option value="10" selected>Gold (&plusmn; 5%)</option>
+          <option value="11">Silver (&plusmn; 10%)</option>
+          </select></td>
+          <tr><font size="24"><center>
+        <td colspan="2" align="right"><h4>Resistance:&nbsp;&nbsp;
+          </h4></td><td colspan="3" align="left">
+          <h4>
+            <p><strong class="resitor-value">1000 &ohm; &plusmn;</strong><strong class="tlorans-value">5%</strong></p>
+          </h4>
+        </td></center></font>
+      </tr>
+        </form>
+          </table>
+          <div class="res-sym">
+          <div class="res-sym-b1"></div>
+          <div class="res-sym-b2"></div>
+          <div class="res-sym-b3"></div>
+          <div class="res-sym-b4"></div>
+          <div class="res-sym-b5"></div>
+        </div>
+        <script src="script.js"></script>
+  </body>
+</html>

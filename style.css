@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 3.5rem;
+  font-size: 3rem;
+}
+
+table {
+  margin: 6rem auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(1) {
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+select {
+  width: 150px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px #ddd;
+  font-size: 1.2rem;
+}
+
+select:focus {
+  box-shadow: 0 0 5px 1px grey;
+}
+
+.result {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.res-sym {
+  width: 44rem;
+  margin: auto;
+  background: url("./resistor-symbol.png");
+  background-repeat: no-repeat;
+  display: flex;
+  gap: 1.1rem;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.res-sym-b1 {
+  width: 1.1rem;
+  height: 6.8rem;
+  background-color: brown;
+}
+.res-sym-b2 {
+  width: 1.1rem;
+  height: 6.8rem;
+  background-color: black;
+}
+.res-sym-b3 {
+  width: 1.1rem;
+  height: 6.8rem;
+  display: none;
+  background-color: transparent;
+}
+.res-sym-b4 {
+  width: 1.1rem;
+  height: 6.8rem;
+  background-color: red;
+  margin-right: 5rem;
+}
+
+.res-sym-b5 {
+  width: 1.1rem;
+  height: 7.4rem;
+  margin-right: 15rem;
+  background-color: gold;
+}
+
+.calcResistance {
+  padding: 1rem 1.3rem;
+  font-size: 1.2rem;
+  background-color: rgb(123, 0, 115);
+  color: white;
+  display: block;
+  width: 10rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.calcResistance:hover {
+  background-color: rgb(75, 2, 71);
+  cursor: pointer;
+}
